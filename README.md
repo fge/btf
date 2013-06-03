@@ -3,6 +3,8 @@
 The license of this project is LGPLv3 or later. See file src/main/resources/LICENSE for the full
 text.
 
+**Note the "L" in "LGPL". LGPL AND GPL ARE QUITE DIFFERENT!**
+
 ## What this is
 
 This package contains interfaces to help for two design patterns:
@@ -65,7 +67,8 @@ public interface Thawed<F extends Frozen<? extends Thawed<F>>>
 These interfaces are meant to be used in a pair of classes, where class `F` is immutable, and class
 `T` is a modifiable version of `F`. The recommended use is as follows:
 
-* `F` and `T` are in the same package;
+* `F` and `T` are in the same package; all instance variables of either class
+  are package local;
 * `F` has no publicly available constructor;
 * `F` has a static factory method in order to return a "virgin" instance of `T`.
 
