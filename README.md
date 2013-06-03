@@ -24,7 +24,7 @@ The current version is **1.0**.
 ```xml
 <dependency>
     <groupId>com.github.fge</groupId>
-    <artifactId>msg-simple</artifactId>
+    <artifactId>btf</artifactId>
     <version>your-version-here</version>
 </dependency>
 ```
