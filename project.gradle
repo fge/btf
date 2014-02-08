@@ -11,29 +11,11 @@ project.ext {
 };
 
 /*
- * Provide the equivalent of Maven's "provided" dependency scope, which gradle
- * _still_ has not integrated as of 1.10 despite all demands to do so... Source:
- *
- * http://blog.codeaholics.org/2012/emulating-mavens-provided-scope-in-gradle/
- *
- */
-
-configurations {
-    provided
-}
-
-sourceSets {
-    main.compileClasspath += configurations.provided
-    test.compileClasspath += configurations.provided
-    test.runtimeClasspath += configurations.provided
-}
-
-/*
  * List of dependencies
  */
 dependencies {
-    provided(group: "com.google.code.findbugs", name: "jsr305",
-        version: "2.0.1");
+    // FIXME: need to make this "provided" eventually, when gradle supports it
+    compile(group: "com.google.code.findbugs", name: "jsr305", version: "2.0.1");
 }
 
 javadoc.options.links("http://docs.oracle.com/javase/6/docs/api");
