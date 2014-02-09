@@ -73,6 +73,10 @@ artifacts {
 // bad idea:    archives fatJar;
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = "1.10";
+}
+
 task pom << {
     pom {}.writeTo("${projectDir}/pom.xml");
 }
