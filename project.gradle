@@ -14,7 +14,7 @@ project.ext {
  * List of dependencies
  */
 dependencies {
-    provided(group: "com.google.code.findbugs", name: "jsr305",
+    compile(group: "com.google.code.findbugs", name: "jsr305",
         version: "2.0.1");
 }
 

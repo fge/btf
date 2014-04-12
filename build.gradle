@@ -26,24 +26,24 @@
  *
  * https://github.com/spring-projects/gradle-plugins/tree/master/propdeps-plugin
  */
-buildscript {
-    repositories {
-        maven {
-            url "http://repo.springsource.org/plugins-release";
-        }
-    }
-    dependencies {
-        classpath(group: "org.springframework.build.gradle",
-            name: "propdeps-plugin", version: "0.0.5");
-    }
-};
-
-configure(allprojects) {
-    apply(plugin: "propdeps");
-    apply(plugin: "propdeps-maven");
-    apply(plugin: "propdeps-idea");
-    apply(plugin: "propdeps-eclipse");
-}
+//buildscript {
+//    repositories {
+//        maven {
+//            url "http://repo.springsource.org/plugins-release";
+//        }
+//    }
+//    dependencies {
+//        classpath(group: "org.springframework.build.gradle",
+//            name: "propdeps-plugin", version: "0.0.5");
+//    }
+//};
+//
+//configure(allprojects) {
+//    apply(plugin: "propdeps");
+//    apply(plugin: "propdeps-maven");
+//    apply(plugin: "propdeps-idea");
+//    apply(plugin: "propdeps-eclipse");
+//}
 
 apply(plugin: "java");
 apply(plugin: "maven");
