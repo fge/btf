@@ -100,7 +100,6 @@ artifacts {
     archives jar;
     archives sourcesJar;
     archives javadocJar;
-// bad idea:    archives fatJar;
 }
 
 task wrapper(type: Wrapper) {
