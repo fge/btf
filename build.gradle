@@ -71,7 +71,6 @@ test {
     useTestNG() {
         useDefaultListeners = true;
     };
-    reports.html.enabled = false;
 }
 
 /*
